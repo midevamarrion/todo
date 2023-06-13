@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <div class="input-container">
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" placeholder="Enter user ID">
+      <button onclick="fetchTodos()">Fetch Todos</button>
+    </div>
+
+    <h2>Add Task:</h2>
+    <div class="input-container">
+      <input type="text" id="newTaskInput" placeholder="Enter task">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <h2>Todos:</h2>
+    <ul id="todoList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
